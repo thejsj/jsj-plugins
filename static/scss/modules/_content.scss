@@ -55,6 +55,14 @@
 			padding-right: 17px;
 		}
 	}
+
+	.gallery-navigation {
+		a {
+			text-decoration: none;
+			border-bottom: 0px;
+		}
+	}
+
 	img { 
 		&.left {
 			max-width: 350px;

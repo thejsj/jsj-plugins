@@ -1,0 +1,30 @@
+table#edd_checkout_cart {
+	width: 99%;
+
+	tbody {
+		background: white;
+	}
+
+	thead, tfoot {
+		th, td {
+			padding: 5px;
+		}
+	}
+}
+
+#edd_checkout_user_info  {
+	input.edd-input {
+		display: block;
+		width: 100%;
+		background-color: white;
+	}
+	.edd-description {
+		color: #333;
+		font-size: 12px;
+	}
+
+	legend {
+		font-weight: bold;
+		padding: 20px 0 10px;
+	}
+}

@@ -9,61 +9,63 @@ function create_post_type() {
 
 	//Pieces
 
-	$work_labels = array(
-		'name' => __( 'Works' ),
-		'singular_name' => __( 'Work' )
+	$plugin_labels = array(
+		'name' => __( 'Plugins' ),
+		'singular_name' => __( 'Plugin' )
 	);
 
-	$work_args = array(
-		'labels'        	 => $work_labels,
+	$plugin_args = array(
+		'labels'        	 => $plugin_labels,
 		'public'             => true,
         'publicly_queryable' => true,
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
         'capability_type'    => 'post',
-		'rewrite' 			 => array('slug' => 'pieces'), // We keep this slug, in order to keep back-wards compatibiltiy with urls
+		'rewrite' 			 => array('slug' => 'plugin'), // We keep this slug, in order to keep back-wards compatibiltiy with urls
 		'has_archive'        => true,
+        'show_in_nav_menus'  => true,
         'hierarchical'       => false,
         'menu_position'      => null,
 		'supports'           => array( 'title', 'author', 'editor', 'excerpt', 'revisions', 'custom-fields', 'thumbnail'),
 	);
 
-	register_post_type( 'work', $work_args);
+	register_post_type( 'plugin', $plugin_args);
 
-	$experiment_labels = array(
-        'name'               => 'Experiments',
-        'singular_name'      => 'Experiment',
-        'add_new'            => 'Add Experiment',
-        'add_new_item'       => 'Add New Experiment',
-        'edit_item'          => 'Edit Experiment',
-        'new_item'           => 'New Experiment',
-        'all_items'          => 'All Experiments',
-        'view_item'          => 'View Experiments',
-        'search_items'       => 'Search Experiments',
-        'not_found'          => 'No Experiments found',
-        'not_found_in_trash' => 'No Experiments found in Trash',
-        'parent_item_colon'  => __( 'Parent Experiment Page' ),
-        'parent'             => __( 'Parent Experiment Page' ),
-        'menu_name'          => 'Experiments'
+	$theme_labels = array(
+        'name'               => 'Themes',
+        'singular_name'      => 'Theme',
+        'add_new'            => 'Add Theme',
+        'add_new_item'       => 'Add New Theme',
+        'edit_item'          => 'Edit Theme',
+        'new_item'           => 'New Theme',
+        'all_items'          => 'All Themes',
+        'view_item'          => 'View Themes',
+        'search_items'       => 'Search Themes',
+        'not_found'          => 'No Themes found',
+        'not_found_in_trash' => 'No Themes found in Trash',
+        'parent_item_colon'  => __( 'Parent Theme Page' ),
+        'parent'             => __( 'Parent Theme Page' ),
+        'menu_name'          => 'Themes'
     );
 
-    $experiment_args = array(
-        'labels'             => $experiment_labels,
+    $theme_args = array(
+        'labels'             => $theme_labels,
         'public'             => true,
         'publicly_queryable' => true,
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'experiments' ),
+        'rewrite'            => array( 'slug' => 'themes' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
+        'show_in_nav_menus'  => true,
         'menu_position'      => null,
         'supports'           => array( 'title', 'author', 'editor', 'excerpt', 'revisions', 'custom-fields', 'thumbnail'),
     );
 
-    register_post_type( 'experiment', $experiment_args );
+    register_post_type( 'theme', $theme_args );
 
 }
 

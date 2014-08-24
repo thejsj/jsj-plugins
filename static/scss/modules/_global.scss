@@ -1,14 +1,17 @@
 html {
 	background: white;
+	height: 100%;
 }
 
 body {
 	//	background-color: $body-background-color;
 	// background-image: url("static/images/noise.png");
+	min-height: 100%;
 	.cssgradients & {
-		background: linear-gradient(rgb(161, 219, 161),transparent ), 
-				linear-gradient( 90deg,rgb(90, 196, 240),transparent ), 
-				linear-gradient( -90deg,rgb(183, 187, 235),transparent );
+		background: 
+			linear-gradient(#E097C3, transparent), 
+			linear-gradient(90deg, #EEB385, transparent), 
+			linear-gradient(-90deg, #EBEBB7, transparent);
 		background-blend-mode: screen;
 	}
 	
@@ -54,6 +57,9 @@ table {
 	margin-left: 0.55em;
 }
 .link-list {
+
+	margin-top: 9px;
+
 	.button {
 		@include button(0.5em, white, 5px, true, false, false);
 		color: $header-font-color;

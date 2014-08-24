@@ -4,17 +4,17 @@ $body-font-family: "proxima-nova", "soleil", "adelle-sans", "proxima-nova", "ade
 $header-font-family: "proxima-nova", "soleil", "adelle-sans", "proxima-nova", "adelle-sans", "nimbus-sans", "adelle-sans", "skolar",serif;
 
 // Main Colors
-$body-font-color: rgb(0,0,200); 
+$body-font-color: rgb(200,10,10); 
 $header-font-color: $body-font-color; 
 $main-color: $body-font-color;
-$body-background-color: rgb(245, 246, 252); 
+$body-background-color: rgb(252, 245, 246); 
 $border-color: $body-font-color; //#A52D2D;
 $header-font-color: $body-font-color;
 
 // Links
-$link-color: #000078; 
-$link-hover-color: #0C2684; 
-$link-visited-color: #0B23DC; 
+$link-color: #780000; 
+$link-hover-color: #FF0029; 
+$link-visited-color: rgb(146, 21, 21); 
 
 // Other
 $black: #222;

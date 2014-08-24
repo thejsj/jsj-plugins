@@ -61,6 +61,12 @@
 			position: static;
 			border-bottom: solid 1px $border-color; 
 			border-bottom: solid 1px rgba( 0, 0, 200, 0.109804 );
+
+			&.featured-plugins-1 {
+				border-bottom: 0px;
+				margin-bottom: 0;
+			}
+
 			h2 {
 				@include breakpoint(720) {
 					margin-top: 20px;	
@@ -110,7 +116,7 @@
 		}
 		.large-3 {
 			.img-container {
-				height: 120px;
+				height: 160px;
 				position: static;
 				overflow: hidden;
 				border-bottom: solid 1px $border-color; 

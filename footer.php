@@ -10,7 +10,7 @@
 			) ); ?>
 			</nav>
 			<div class="large-6 large-pull-6 columns">
-				<span class="copyright">&copy; Copyright <?php echo copyright(2010); ?>... I mean, cause it really matters and stuff...</span>
+				<span class="copyright">&copy; Copyright <?php echo copyright(2010); ?></span>
 			</div>
 		</div>
 	</footer>

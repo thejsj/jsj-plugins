@@ -2,7 +2,6 @@
 <html>
 <head>
 
-
     <!-- Meta Information -->
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -33,7 +32,7 @@
     <meta name="twitter:image" content="<?php echo $this_object->get_main_image_src(); ?>">
 
     <!-- Javascript -->
-    <script type="text/javascript" src="//use.typekit.net/dxo7bou.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/mth8oxl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <!-- CSS : Concatanted styles generated with SCSS -->

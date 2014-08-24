@@ -25,6 +25,7 @@ class Content {
 		$this->post->sub_title          = get_post_meta( $this->ID, 'sub_title', true );
 		$this->post->even               = ($key % 2 == 0 ? true : false);
 		$this->post->links              = $this->get_post_links($this->ID);
+		$this->post->dont_show_disqus   = get_post_meta($this->ID, 'dont_show_disqus', true);
 
 		// Get Featured Content
 		$this->post->featured_image     = new Image($this->ID);
@@ -127,24 +128,26 @@ class Content {
 		if($return['type'] == 'gallery'){
 			return $this->get_acf_gallery_shortcode($this->ID);
 		}
-		else if($return['type'] == 'vimeo'){
+		else if($return['type'] === 'vimeo'){
 			$this->post->vimeo_id = get_post_meta($this->ID, 'vimeo_video_id', true);
 			if($this->post->vimeo_id){
 				$template = $mustache->loadTemplate('vimeo-video'); 
 				return $template->render($this->post);
 			}
 		}
-		else if($return['type'] == 'youtube'){
+		else if($return['type'] === 'youtube'){
 			$this->post->youtube_id = get_post_meta($this->ID, 'youtube_video_id', true);
 			if($this->post->youtube_id){
 				$template = $mustache->loadTemplate('youtube-video'); 
 				return $template->render($this->post);
 			}
 		}
-		else if($this->post->featured_image){
+		else if($return['type'] == 'image' && $this->post->featured_image){
 			// If none of this works, render the featured image
 			$template = $mustache->loadTemplate('featured-image'); 
 			return $template->render($this->post);
+		} else {
+			return "";
 		}
 	}
 

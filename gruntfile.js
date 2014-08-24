@@ -1,7 +1,7 @@
 var config = require('./config');
 var moment = require('moment');
 
- var db = config.databases,
+var db = config.databases,
     lo = db.local,
     it = db.production,
     now = moment().format('YYYY-MMMM-D-h-mm-ssa'),

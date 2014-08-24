@@ -5,10 +5,10 @@
 		public $template_name = "home";
 
 		public function __construct(){
-			$this->featured_work = $this->get_post_from_repeater_field('featured_projects');
-			$this->posts = $this->featured_work;
-			$this->featured_wordpress_plugins = $this->get_post_from_repeater_field('featured_wordpress_plugins');
-			$this->featured_experiments = $this->get_featured_experiments();
+			$this->featured_plugins_0 = $this->get_post_from_repeater_field('featured_plugins_0');
+			$this->featured_plugins_1 = $this->get_post_from_repeater_field('featured_plugins_1');
+			$this->posts = $this->featured_plugins_0;
+			$this->featured_themes = $this->get_post_from_repeater_field('featured_themes');
 		}
 
 		/**
