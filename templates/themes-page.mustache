@@ -10,9 +10,17 @@
 	</div>
 
 	<div class="row">
-		<div class="large-10 large-offset-1 columns">
-			<div>
-				{{ post.post_content }}
+		<div class="large-3 columns link-list">
+			<ul>
+			{{# post.links }}
+				<li><a href="{{& url }}" target="{{ target }}" class="button large">{{ title }}</a></li>
+			{{/ post.links }}
+			</ul>
+		</div>
+		<div class="large-8 columns end"><!-- large-centered -->
+				<div class="entry-content">
+					{{& post.post_content }}
+				</div>
 			</div>
 		</div>
 	</div>
