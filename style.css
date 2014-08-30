@@ -1,6 +1,6 @@
 /*
-Theme Name: thejsj9
-Theme URI: http://thejsj.com
+Theme Name: jsj-plugins
+Theme URI: http://jsj-plugins.thejsj.com
 Author: Jorge Silva-Jetter
 Author URI: http://thejsj.com
 Description: 
@@ -2889,20 +2889,31 @@ table#edd_checkout_cart tbody {
 table#edd_checkout_cart thead th, table#edd_checkout_cart thead td, table#edd_checkout_cart tfoot th, table#edd_checkout_cart tfoot td {
   padding: 5px;
 }
+/* line 14, static/scss/modules/_checkout.scss */
+table#edd_checkout_cart .edd_cart_item_image {
+  float: left;
+  margin-right: 15px;
+}
 
-/* line 16, static/scss/modules/_checkout.scss */
+/* line 21, static/scss/modules/_checkout.scss */
 #edd_checkout_user_info input.edd-input {
   display: block;
   width: 100%;
   background-color: white;
 }
-/* line 21, static/scss/modules/_checkout.scss */
+/* line 26, static/scss/modules/_checkout.scss */
 #edd_checkout_user_info .edd-description {
   color: #333;
   font-size: 12px;
 }
-/* line 26, static/scss/modules/_checkout.scss */
+/* line 31, static/scss/modules/_checkout.scss */
 #edd_checkout_user_info legend {
   font-weight: bold;
   padding: 20px 0 10px;
+}
+
+/* line 3, static/scss/modules/_theme-list-container.scss */
+.themes-list-container .row .large-12.page-title {
+  border-top: 1px #c80a0a solid;
+  padding-top: 35px;
 }

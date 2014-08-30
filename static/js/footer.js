@@ -1,4 +1,4 @@
-/*! jsj-9 - v0.1.0 - 2014-07-03 *//*! jQuery v1.11.0 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
+/*! jsj-9 - v0.1.0 - 2014-08-24 *//*! jQuery v1.11.0 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
 !function(a, b) {
     "object" == typeof module && "object" == typeof module.exports ? module.exports = a.document ? b(a, !0) : function(a) {
         if (!a.document) throw new Error("jQuery requires a window with a document");
@@ -7,7 +7,7 @@
 }("undefined" != typeof window ? window : this, function(a, b) {
     var c = [], d = c.slice, e = c.concat, f = c.push, g = c.indexOf, h = {}, i = h.toString, j = h.hasOwnProperty, k = "".trim, l = {}, m = "1.11.0", n = function(a, b) {
         return new n.fn.init(a, b);
-    }, o = /^[\s﻿ ]+|[\s﻿ ]+$/g, p = /^-ms-/, q = /-([\da-z])/gi, r = function(a, b) {
+    }, o = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, p = /^-ms-/, q = /-([\da-z])/gi, r = function(a, b) {
         return b.toUpperCase();
     };
     n.fn = n.prototype = {

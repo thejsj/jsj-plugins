@@ -130,7 +130,7 @@ module.exports = function(grunt) {
 			options: {
 				windowsTile: false,
 				trueColor: true,
-				appleTouchBackgroundColor: '#31439c',
+				appleTouchBackgroundColor: '#c80a0a',
 				precomposed: false,
 			},
 			icons: {

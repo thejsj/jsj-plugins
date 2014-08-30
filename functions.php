@@ -26,6 +26,7 @@
 
 	require_once( trailingslashit( get_stylesheet_directory() ) . 'views/home.php' );
 	require_once( trailingslashit( get_stylesheet_directory() ) . 'views/single.php' );
+	require_once( trailingslashit( get_stylesheet_directory() ) . 'views/themes-page.php' );
 	
 	require_once( trailingslashit( get_stylesheet_directory() ) . 'views/404.php' );
 

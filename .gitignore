@@ -25,7 +25,9 @@ database_backups/*
 
 # Fabfile.py
 fabfile.py
+fabfile.pyc
 **/fabfile.py
+**/fabfile.pyc
 
 # Ignore OS generated files 
 .DS_Store

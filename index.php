@@ -22,34 +22,6 @@
     else {
         $this_object = new FourOFour();
     }
-
-    // Render Template at the end of the query
-    
-
-    // if(is_archive()){
-    //     $queried_object->post_content .= " is_archive -";
-    // }
-    // if(is_category()){
-    //     $queried_object->post_content .= " is_category -";
-    // }
-    // if(is_post_type_archive()){
-    //     $queried_object->post_content .= " is_post_type_archive -";
-    // }
-    // if(is_search()){
-    //     $queried_object->post_content .= " is_search -";
-    // }
-    // if(is_404()){
-    //     $queried_object->post_content .= " is_404 -";
-    // }
-    // if(is_attachment()){
-    //     $queried_object->post_content .= " is_attachment -";
-    // }
-    // if(is_main_query()){
-    //     $queried_object->post_content .= " is_main_query -";
-    // }
-    // if(is_paged()){
-    //     $queried_object->post_content .= " is_paged -";
-    // }
     
     $json_mode = false;
 

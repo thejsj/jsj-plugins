@@ -18,33 +18,6 @@
 		}
 
 		/**
-		 * Get all posts/pieces/experiments in a taxonomy
-		 * 
-		 * @return array
-		 */
-		public function get_posts_in_taxonomy($term_id = false, $post_type = 'post', $taxonomy = false){
-			global $wp_query;
-			// echo json_encode($wp_query);
-			// die();
-
-			$args = array(
-				'posts_per_page' => 10,
-				'paged' => (get_query_var('page')) ? get_query_var('page') : 1,
-			);
-			if($term_id){
-				$args['cat'] = $term_id;
-			}
-			if($post_type){
-				$args['post_type'] = $post_type;
-			}
-			if($taxonomy){
-				$args['taxonomy'] = $taxonomy;
-			}			
-			$query = new WP_Query( $args );
-			return $query->posts;
-		}
-
-		/**
 		 * For singles, use the post image to genarate a facebook image tag
 		 *
 		 * @see https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object/
