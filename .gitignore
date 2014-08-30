@@ -38,3 +38,6 @@ fabfile.pyc
 ehthumbs.db
 Thumbs.db
 !README.md
+
+static/ico/**/*
+style.css
