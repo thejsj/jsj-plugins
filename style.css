@@ -2858,19 +2858,19 @@ hr.ninja-forms-field {
 }
 
 /* line 1, static/scss/modules/_checkout.scss */
-table#edd_checkout_cart, table#edd_receipt_payment_status, table#edd_purchase_receipt_products {
+table#edd_checkout_cart, table#edd_receipt_payment_status, table#edd_purchase_receipt, table#edd_purchase_receipt_products {
   width: 99%;
 }
 /* line 4, static/scss/modules/_checkout.scss */
-table#edd_checkout_cart tbody, table#edd_receipt_payment_status tbody, table#edd_purchase_receipt_products tbody {
+table#edd_checkout_cart tbody, table#edd_receipt_payment_status tbody, table#edd_purchase_receipt tbody, table#edd_purchase_receipt_products tbody {
   background: white;
 }
 /* line 9, static/scss/modules/_checkout.scss */
-table#edd_checkout_cart thead th, table#edd_checkout_cart thead td, table#edd_checkout_cart tfoot th, table#edd_checkout_cart tfoot td, table#edd_receipt_payment_status thead th, table#edd_receipt_payment_status thead td, table#edd_receipt_payment_status tfoot th, table#edd_receipt_payment_status tfoot td, table#edd_purchase_receipt_products thead th, table#edd_purchase_receipt_products thead td, table#edd_purchase_receipt_products tfoot th, table#edd_purchase_receipt_products tfoot td {
+table#edd_checkout_cart thead th, table#edd_checkout_cart thead td, table#edd_checkout_cart tfoot th, table#edd_checkout_cart tfoot td, table#edd_receipt_payment_status thead th, table#edd_receipt_payment_status thead td, table#edd_receipt_payment_status tfoot th, table#edd_receipt_payment_status tfoot td, table#edd_purchase_receipt thead th, table#edd_purchase_receipt thead td, table#edd_purchase_receipt tfoot th, table#edd_purchase_receipt tfoot td, table#edd_purchase_receipt_products thead th, table#edd_purchase_receipt_products thead td, table#edd_purchase_receipt_products tfoot th, table#edd_purchase_receipt_products tfoot td {
   padding: 5px;
 }
 /* line 14, static/scss/modules/_checkout.scss */
-table#edd_checkout_cart .edd_cart_item_image, table#edd_receipt_payment_status .edd_cart_item_image, table#edd_purchase_receipt_products .edd_cart_item_image {
+table#edd_checkout_cart .edd_cart_item_image, table#edd_receipt_payment_status .edd_cart_item_image, table#edd_purchase_receipt .edd_cart_item_image, table#edd_purchase_receipt_products .edd_cart_item_image {
   float: left;
   margin-right: 15px;
 }
