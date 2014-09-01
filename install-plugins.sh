@@ -9,3 +9,5 @@ unzip /var/www/thejsj.com/public_html/2014/jsj-plugins-repo/jsj-gs-bravo.zip -d 
 unzip /var/www/thejsj.com/public_html/2014/jsj-plugins-repo/jsj-gs-moa.zip -d ./jsj-gs-moa
 unzip /var/www/thejsj.com/public_html/2014/jsj-plugins-repo/jsj-gs-volga.zip -d ./jsj-gs-volga
 unzip /var/www/thejsj.com/public_html/2014/jsj-plugins-repo/jsj-gallery-slideshow.zip -d ./jsj-gallery-slideshow
+
+cd ../plugins/jsj-plugins
