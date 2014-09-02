@@ -31,7 +31,9 @@
 			<div class="row">
 				<div class="large-12 columns page-title">
 					<div class="page-title {{# post.sub_title }}has-paragraph{{/ post.sub_title }} {{# post.featured_content }}has-featured-content{{/ post.featured_content }}">
-						<h2>{{ post.post_title }}</h2>
+						<a href="{{& post.permalink }}">
+							<h2>{{ post.post_title }}</h2>
+						</a>
 						{{# post.sub_title }}
 						<p>{{ post.sub_title }}</p>
 						{{/ post.sub_title }}
