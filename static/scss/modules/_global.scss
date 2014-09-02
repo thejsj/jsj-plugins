@@ -8,11 +8,13 @@ body {
 	// background-image: url("static/images/noise.png");
 	min-height: 100%;
 	.cssgradients & {
-		background: 
-			linear-gradient(#E097C3, transparent), 
-			linear-gradient(90deg, #EEB385, transparent), 
-			linear-gradient(-90deg, #EBEBB7, transparent);
-		background-blend-mode: screen;
+		@include breakpoint(720) {
+			background: 
+				linear-gradient(#E097C3, transparent), 
+				linear-gradient(90deg, #EEB385, transparent), 
+				linear-gradient(-90deg, #EBEBB7, transparent);
+			background-blend-mode: screen;
+		}
 	}
 	
 }
